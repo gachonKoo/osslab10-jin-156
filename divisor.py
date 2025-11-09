@@ -1,8 +1,9 @@
-n = int(input("Enter a number: "))
-divisors = []
+import sys
 
-for i in range(1, n + 1):
-    if n % i == 0:
-        divisors.append(i)
+number = int(sys.argv[1])
 
-print("Divisors of", n, "are:", divisors)
+for i in range(1, number + 1): # loop between 1 and number
+    if number % i == 0: # check if remainder is 0
+        print(i, end=" ")
+
+print()
